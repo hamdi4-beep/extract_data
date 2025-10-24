@@ -17,8 +17,8 @@ if __name__ == '__main__':
     items = {}
     
     for line in lines:
-        if line.startswith('###'):
-            heading = line[4:-1]
+        if line.startswith('##'):
+            heading = line[3:-1]
             list = []
 
         if line.startswith('-'):
