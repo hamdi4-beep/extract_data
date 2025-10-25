@@ -18,7 +18,8 @@ for line in lines:
         heading = line[3:-1].strip()
 
     if line.startswith('-'):
-        items[heading].append(line[:-1])
+        line = line[1:-1].strip()
+        items[heading].append(line)
 
 json_string = json.dumps(items, indent=4)
 print(json_string)
