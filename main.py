@@ -15,7 +15,7 @@ heading = 'No heading'
 
 for line in lines:
     if line.startswith('##'):
-        heading = line[:-1]
+        heading = line[3:-1].strip()
 
     if line.startswith('-'):
         items[heading].append(line[:-1])
